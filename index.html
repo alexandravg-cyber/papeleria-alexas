@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Papelería Alexas, Lagos 3, Floridablanca: útiles escolares, papelería y oficina, impresiones, regalos y detalles, tecnología e internet. WhatsApp 317 368 1950.">
+<link rel="icon" href="img/logo-s.jpg">
+<style>[hidden]{display:none!important}body{margin:0}img{max-width:100%}</style>
+<title>Papelería Alexas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap">
+<style>
+/* Layout: la marca del logo — aro de cuatro colores, íconos en círculos de color, fondo blanco limpio */
+:root{
+  --bg:#ffffff; --bg2:#f5f8ff; --ink:#1a2a5c; --muted:#5d6a8c; --line:#e3e9f6; --card:#ffffff;
+  --red:#e8344e; --blue:#1f56c8; --yellow:#ffbe2e; --amber:#b87900; --green:#2fae5a; --purple:#8a4fd6; --teal:#16a5a0;
+  --red-t:#fde8ec; --blue-t:#e7eefd; --yellow-t:#fff4d6; --green-t:#e2f6e9; --purple-t:#f0e8fc; --teal-t:#dff5f4;
+  --on:#ffffff; --shadow:0 10px 30px -14px rgba(31,86,200,.35);
+  --display:"Baloo 2","Trebuchet MS",ui-rounded,system-ui,sans-serif;
+  --body:"Nunito",ui-rounded,system-ui,-apple-system,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0e1530; --bg2:#141d3f; --ink:#eef2ff; --muted:#a6b1d4; --line:#25305a; --card:#18224a;
+  --red:#ff5a70; --blue:#6f9bff; --yellow:#ffc94d; --amber:#ffc94d; --green:#4fd17f; --purple:#b48cff; --teal:#3dd0c9;
+  --red-t:#3a1a2a; --blue-t:#1b2a5c; --yellow-t:#3a3120; --green-t:#16362a; --purple-t:#2c2150; --teal-t:#133a40;
+  --on:#0e1530; --shadow:0 10px 30px -14px rgba(0,0,0,.6); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e1530; --bg2:#141d3f; --ink:#eef2ff; --muted:#a6b1d4; --line:#25305a; --card:#18224a;
+  --red:#ff5a70; --blue:#6f9bff; --yellow:#ffc94d; --amber:#ffc94d; --green:#4fd17f; --purple:#b48cff; --teal:#3dd0c9;
+  --red-t:#3a1a2a; --blue-t:#1b2a5c; --yellow-t:#3a3120; --green-t:#16362a; --purple-t:#2c2150; --teal-t:#133a40;
+  --on:#0e1530; --shadow:0 10px 30px -14px rgba(0,0,0,.6); color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--body)}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:20px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:1.05;margin:0;color:var(--ink)}
+h2{font-size:clamp(1.9rem,4vw,2.6rem);font-weight:800}
+h3{font-size:1.15rem;font-weight:700;line-height:1.2}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:2px;border-radius:6px}
+.ring{height:6px;background:linear-gradient(90deg,var(--yellow) 0 25%,var(--red) 25% 50%,var(--blue) 50% 75%,var(--teal) 75%)}
+.tag{display:inline-block;font:800 .74rem/1 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--red)}
+.sechead{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin-bottom:26px}
+.sechead p{margin:6px 0 0;color:var(--muted);max-width:60ch}
+section{padding-block:60px}
+
+/* header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:10px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand img{width:46px;height:46px;border-radius:50%;object-fit:cover;border:3px solid var(--yellow)}
+.brand b{font:800 1.35rem/1 var(--display);color:var(--blue)}
+.brand b span{color:var(--red)}
+nav{display:flex;gap:2px;flex-wrap:wrap;align-items:center}
+nav a{color:var(--ink);text-decoration:none;padding:7px 11px;border-radius:999px;font-weight:700;font-size:.92rem}
+nav a:hover{background:var(--blue-t);color:var(--blue)}
+.wa{display:inline-flex;align-items:center;gap:8px;background:var(--green);color:var(--on)!important;padding:9px 14px!important;border-radius:999px}
+.wa:hover{filter:brightness(1.05)}
+.wa svg{width:18px;height:18px}
+
+/* hero */
+.hero{background:radial-gradient(60% 80% at 85% 30%,var(--yellow-t),transparent 70%),radial-gradient(50% 60% at 5% 90%,var(--blue-t),transparent 70%),var(--bg)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:36px;align-items:center;padding-block:44px 52px}
+@media (max-width:820px){.hero .wrap{grid-template-columns:1fr}.hero .logo{max-width:320px;margin:0 auto}}
+.hero h1{font-size:clamp(2.5rem,6.2vw,4.4rem);font-weight:800;color:var(--blue)}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero h1 u{text-decoration:none;background:linear-gradient(transparent 62%,var(--yellow) 62%);color:var(--ink)}
+.hero p.lead{font-size:1.15rem;color:var(--muted);max-width:50ch;margin:18px 0 0}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 1rem/1 var(--body);padding:14px 20px;border-radius:14px;border:2px solid var(--blue);background:var(--blue);color:var(--on);text-decoration:none;cursor:pointer;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.alt{background:transparent;color:var(--blue)}
+.btn.green{background:var(--green);border-color:var(--green)}
+.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
+.info{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.pill{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-weight:700;font-size:.92rem}
+.pill i{width:10px;height:10px;border-radius:50%;display:inline-block}
+.logo{position:relative;aspect-ratio:1;max-width:100%}
+.logo img{width:100%;height:100%;object-fit:cover;border-radius:50%;box-shadow:var(--shadow);border:8px solid var(--card)}
+.logo::before{content:"";position:absolute;inset:-14px;border-radius:50%;background:conic-gradient(var(--yellow) 0 25%,var(--red) 0 50%,var(--blue) 0 75%,var(--teal) 0);z-index:-1}
+.logo{z-index:0;isolation:isolate}
+
+/* franja de categorías */
+.strip{background:var(--bg2);border-block:1px solid var(--line)}
+.strip .wrap{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;padding-block:26px}
+@media (max-width:820px){.strip .wrap{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.ico{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;font:800 .78rem/1.15 var(--body);text-transform:uppercase;letter-spacing:.03em;text-decoration:none;color:var(--ink)}
+.ico span.c{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;color:#fff;box-shadow:0 6px 0 -1px rgba(0,0,0,.08)}
+.ico svg{width:32px;height:32px}
+
+/* galería */
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+@media (max-width:900px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.ph{margin:0;background:var(--card);border-radius:18px;overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column}
+.ph img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;max-width:100%}
+.ph figcaption{padding:12px 14px;display:flex;justify-content:space-between;gap:8px;align-items:baseline;font-weight:700;font-size:.95rem}
+.ph figcaption small{font-weight:800;color:var(--red);white-space:nowrap;font-variant-numeric:tabular-nums}
+.ph.wide{grid-column:span 2}
+.ph.wide img{aspect-ratio:auto;height:100%;max-height:420px}
+@media (max-width:900px){.ph.wide{grid-column:span 2}}
+
+/* catálogo */
+.tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:22px}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{font:800 .88rem/1 var(--body);padding:9px 14px;border-radius:999px;border:2px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--blue);color:var(--on);border-color:var(--blue)}
+.search{flex:1 1 220px;min-width:0;padding:11px 16px;border-radius:999px;border:2px solid var(--line);background:var(--card);color:var(--ink);font:inherit}
+.search:focus{border-color:var(--blue);outline:none}
+.products{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px}
+.prod{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.prod .art{border-radius:12px;aspect-ratio:4/3;display:grid;place-items:center;max-width:100%}
+.prod .art svg{width:46%;height:auto;max-height:80%}
+.prod h3{font-size:1.02rem}
+.prod p{margin:0;color:var(--muted);font-size:.86rem;line-height:1.4;flex:1}
+.prod .row{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.prod .cat{font:800 .7rem var(--body);text-transform:uppercase;letter-spacing:.06em}
+.add{font:800 .82rem/1 var(--body);border:2px solid var(--blue);color:var(--blue);background:transparent;border-radius:999px;padding:7px 12px;cursor:pointer}
+.add[aria-pressed="true"]{background:var(--blue);color:var(--on)}
+.empty{color:var(--muted);padding:20px 0}
+
+/* lista de pedido */
+.cart{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;background:var(--ink);color:var(--bg);border-radius:18px;padding:12px 14px;display:flex;align-items:center;gap:12px;box-shadow:var(--shadow);max-width:calc(100% - 32px)}
+.cart[hidden]{display:none}
+.cart b{font-family:var(--display);font-size:1.1rem}
+.cart .btn{padding:10px 14px;font-size:.9rem}
+
+/* servicios */
+.serv{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.sv{border-radius:18px;padding:20px;display:flex;flex-direction:column;gap:10px}
+.sv .h{display:flex;align-items:center;gap:12px}
+.sv .h span{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;color:#fff;flex:none}
+.sv .h svg{width:26px;height:26px}
+.sv ul{margin:0;padding-left:18px}
+.sv li{margin-bottom:3px}
+
+/* chat */
+.chatbox{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:28px;align-items:start}
+@media (max-width:780px){.chatbox{grid-template-columns:1fr}}
+.panel{background:var(--card);border:2px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;min-width:0;box-shadow:var(--shadow)}
+.panel .bar{display:flex;align-items:center;gap:10px;padding:12px 16px;background:var(--blue);color:#fff}
+.panel .bar img{width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid var(--yellow)}
+.status{font-size:.8rem;opacity:.9}
+.log{height:330px;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px;background:var(--bg2)}
+.msg{max-width:85%;padding:10px 14px;border-radius:16px;font-size:.95rem;white-space:pre-line}
+.msg.bot{background:var(--card);border:1px solid var(--line);align-self:flex-start;border-bottom-left-radius:4px}
+.msg.me{background:var(--blue);color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
+.quick{display:flex;gap:6px;flex-wrap:wrap;padding:10px 16px 0}
+.composer{display:flex;gap:8px;padding:12px}
+.composer input{flex:1;min-width:0;padding:11px 14px;border-radius:999px;border:2px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+.gate{padding:16px;display:flex;flex-direction:column;gap:12px;border-top:1px solid var(--line)}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:.92rem}
+.check input{margin-top:4px;width:18px;height:18px;accent-color:var(--blue);flex:none}
+.side ul{padding-left:0;list-style:none;margin:14px 0;display:flex;flex-direction:column;gap:8px}
+.side li{display:flex;gap:10px;align-items:flex-start}
+.side li::before{content:"";width:12px;height:12px;border-radius:50%;background:var(--yellow);margin-top:7px;flex:none}
+.side li:nth-child(2)::before{background:var(--red)}.side li:nth-child(3)::before{background:var(--blue)}.side li:nth-child(4)::before{background:var(--teal)}
+.note{font-size:.88rem;color:var(--muted)}
+
+/* política */
+.policy-wrap{background:var(--bg2);border-top:1px solid var(--line)}
+.policy{display:grid;grid-template-columns:230px minmax(0,1fr);gap:32px;align-items:start}
+@media (max-width:840px){.policy{grid-template-columns:1fr}.toc{position:static!important}}
+.toc{position:sticky;top:90px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;font-size:.9rem}
+.toc ol{padding-left:20px;margin:8px 0 0;display:flex;flex-direction:column;gap:5px}
+.toc a{color:var(--muted);text-decoration:none;font-weight:600}
+.toc a:hover{color:var(--blue)}
+.doc{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:clamp(18px,4vw,36px);min-width:0}
+.doc > *{max-width:70ch}
+.doc h3{margin:30px 0 8px;font-size:1.25rem;color:var(--blue)}
+.doc h3:first-of-type{margin-top:0}
+.meta{font-size:.84rem;color:var(--muted);padding:12px 14px;border:2px dashed var(--line);border-radius:12px;margin-bottom:24px}
+.fill{background:var(--yellow-t);color:var(--ink);padding:0 5px;border-radius:4px;font-weight:800;border-bottom:2px solid var(--yellow)}
+.table{overflow-x:auto;margin:12px 0}
+.table table{border-collapse:collapse;width:100%;min-width:460px;font-size:.92rem}
+.table th,.table td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.table th{font-weight:800;font-size:.74rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.auth{background:var(--blue-t);border-radius:18px;padding:22px;margin-top:34px;display:flex;flex-direction:column;gap:14px;max-width:none!important}
+.fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.fields label{display:flex;flex-direction:column;gap:4px;font-size:.85rem;font-weight:700;color:var(--muted)}
+.fields input{padding:11px 12px;border-radius:10px;border:2px solid var(--line);background:var(--card);color:var(--ink);font:inherit}
+.receipt{font-size:.88rem;background:var(--card);border:2px solid var(--green);border-radius:12px;padding:12px 14px;white-space:pre-line}
+.err{color:var(--red);font-size:.9rem;font-weight:700;margin:0}
+
+footer{background:var(--blue);color:#fff;padding-block:30px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer a{color:#fff}
+footer .f{display:flex;align-items:center;gap:12px}
+footer img{width:52px;height:52px;border-radius:50%;border:3px solid var(--yellow)}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs>
+  <g id="i-cuaderno"><rect x="12" y="6" width="26" height="36" rx="3" fill="currentColor" opacity=".22"/><rect x="12" y="6" width="26" height="36" rx="3"/><path d="M8 12h6M8 19h6M8 26h6M8 33h6M19 15h13M19 21h13M19 27h9"/></g>
+  <g id="i-lapiz"><path d="M10 38l4-12 20-20 8 8-20 20z" fill="currentColor" opacity=".22"/><path d="M10 38l4-12 20-20 8 8-20 20zM14 26l8 8M30 10l8 8"/></g>
+  <g id="i-colores"><path d="M12 42V16l3-8 3 8v26zM21 42V14l3-8 3 8v28zM30 42V18l3-8 3 8v24z" fill="currentColor" opacity=".22"/><path d="M12 42V16l3-8 3 8v26M21 42V14l3-8 3 8v28M30 42V18l3-8 3 8v24M10 42h28"/></g>
+  <g id="i-tijeras"><circle cx="14" cy="34" r="6" fill="currentColor" opacity=".22"/><circle cx="34" cy="34" r="6" fill="currentColor" opacity=".22"/><circle cx="14" cy="34" r="6"/><circle cx="34" cy="34" r="6"/><path d="M18 29L34 6M30 29L14 6"/></g>
+  <g id="i-regla"><rect x="4" y="17" width="40" height="14" rx="2" fill="currentColor" opacity=".22"/><rect x="4" y="17" width="40" height="14" rx="2"/><path d="M10 17v6M16 17v4M22 17v6M28 17v4M34 17v6M40 17v4"/></g>
+  <g id="i-pegante"><rect x="15" y="16" width="18" height="26" rx="3" fill="currentColor" opacity=".22"/><rect x="15" y="16" width="18" height="26" rx="3"/><path d="M18 16V8h12v8M15 24h18"/></g>
+  <g id="i-cartulina"><path d="M8 12h26v30H8z" fill="currentColor" opacity=".22"/><path d="M8 12h26v30H8zM14 6h26v30"/></g>
+  <g id="i-resma"><path d="M8 18l16-8 16 8-16 8z" fill="currentColor" opacity=".22"/><path d="M8 18l16-8 16 8-16 8zM8 18v8l16 8 16-8v-8M8 26v8l16 8 16-8v-8"/></g>
+  <g id="i-grapadora"><path d="M6 34h36v6H6z" fill="currentColor" opacity=".22"/><path d="M6 34h36v6H6zM8 34l4-14h26c3 0 4 2 4 4v4H12"/></g>
+  <g id="i-carpeta"><path d="M6 14h14l4 4h18v22H6z" fill="currentColor" opacity=".22"/><path d="M6 14h14l4 4h18v22H6z"/></g>
+  <g id="i-usb"><rect x="14" y="16" width="20" height="28" rx="4" fill="currentColor" opacity=".22"/><rect x="14" y="16" width="20" height="28" rx="4"/><path d="M18 16V5h12v11M21 9h2M25 9h2"/></g>
+  <g id="i-audifonos"><path d="M8 30v-4a16 16 0 0132 0v4"/><rect x="6" y="28" width="9" height="13" rx="3" fill="currentColor" opacity=".22"/><rect x="33" y="28" width="9" height="13" rx="3" fill="currentColor" opacity=".22"/><rect x="6" y="28" width="9" height="13" rx="3"/><rect x="33" y="28" width="9" height="13" rx="3"/></g>
+  <g id="i-mouse"><rect x="13" y="6" width="22" height="36" rx="11" fill="currentColor" opacity=".22"/><rect x="13" y="6" width="22" height="36" rx="11"/><path d="M24 6v12M13 18h22"/></g>
+  <g id="i-cable"><path d="M10 6v10M16 6v10M7 16h12v6H7zM13 22v8c0 6 4 10 10 10h6c5 0 8-3 8-8V20"/><rect x="31" y="10" width="12" height="10" rx="2" fill="currentColor" opacity=".22"/><rect x="31" y="10" width="12" height="10" rx="2"/></g>
+  <g id="i-pilas"><rect x="10" y="12" width="12" height="30" rx="3" fill="currentColor" opacity=".22"/><rect x="26" y="12" width="12" height="30" rx="3" fill="currentColor" opacity=".22"/><rect x="10" y="12" width="12" height="30" rx="3"/><rect x="26" y="12" width="12" height="30" rx="3"/><path d="M14 8h4M30 8h4M16 22v6M13 25h6M29 25h6"/></g>
+  <g id="i-calc"><rect x="10" y="4" width="28" height="40" rx="4" fill="currentColor" opacity=".22"/><rect x="10" y="4" width="28" height="40" rx="4"/><rect x="15" y="9" width="18" height="8" rx="1"/><path d="M17 24h2M24 24h2M31 24h0M17 31h2M24 31h2M17 38h2M24 38h2M31 29v9"/></g>
+  <g id="i-regalo"><rect x="8" y="20" width="32" height="22" rx="2" fill="currentColor" opacity=".22"/><rect x="8" y="20" width="32" height="22" rx="2"/><path d="M6 14h36v6H6zM24 14v28M24 14c-3-8-12-8-10-2M24 14c3-8 12-8 10-2"/></g>
+  <g id="i-globo"><ellipse cx="24" cy="18" rx="12" ry="14" fill="currentColor" opacity=".22"/><ellipse cx="24" cy="18" rx="12" ry="14"/><path d="M22 32h4l-2 3zM24 35c-3 4 3 6 0 10"/></g>
+  <g id="i-tarjeta"><rect x="6" y="12" width="36" height="26" rx="3" fill="currentColor" opacity=".22"/><rect x="6" y="12" width="36" height="26" rx="3"/><path d="M6 14l18 13 18-13M24 33c-4-3-7-5-7-8a3 3 0 016-1 3 3 0 016 1c0 3-3 5-5 8"/></g>
+  <g id="i-bolsa"><path d="M10 16h28l-2 26H12z" fill="currentColor" opacity=".22"/><path d="M10 16h28l-2 26H12zM18 16v-3a6 6 0 0112 0v3"/></g>
+  <g id="i-impresora"><rect x="6" y="18" width="36" height="16" rx="3" fill="currentColor" opacity=".22"/><path d="M14 18V6h20v12M6 18h36v16H6zM14 28h20v14H14zM35 23h2"/></g>
+  <g id="i-anillado"><rect x="10" y="10" width="30" height="32" rx="2" fill="currentColor" opacity=".22"/><rect x="10" y="10" width="30" height="32" rx="2"/><path d="M8 14c-4 0-4 4 0 4M8 22c-4 0-4 4 0 4M8 30c-4 0-4 4 0 4M17 18h16M17 24h16"/></g>
+  <g id="i-oficina"><rect x="10" y="6" width="28" height="36" rx="3" fill="currentColor" opacity=".22"/><path d="M10 6h20l8 8v28H10zM30 6v8h8M16 22h16M16 28h16M16 34h10"/></g>
+  <g id="i-internet"><circle cx="24" cy="24" r="17" fill="currentColor" opacity=".22"/><circle cx="24" cy="24" r="17"/><path d="M7 24h34M24 7c-6 6-6 28 0 34M24 7c6 6 6 28 0 34"/></g>
+  <g id="i-calidad"><path d="M24 4l5 4 6-1 2 6 5 4-3 6 3 6-5 4-2 6-6-1-5 4-5-4-6 1-2-6-5-4 3-6-3-6 5-4 2-6 6 1z" fill="currentColor" opacity=".22"/><path d="M24 4l5 4 6-1 2 6 5 4-3 6 3 6-5 4-2 6-6-1-5 4-5-4-6 1-2-6-5-4 3-6-3-6 5-4 2-6 6 1zM17 24l5 5 9-10"/></g>
+  <g id="i-wa"><path d="M24 6a17 17 0 00-14.6 25.7L7 41l9.6-2.4A17 17 0 1024 6z"/><path d="M18 17c0 7 6 13 13 13l2-3-4-2-2 2c-3-1-5-3-6-6l2-2-2-4z"/></g>
+ </defs>
+</svg>
+
+<div class="ring" aria-hidden="true"></div>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio"><img src="img/logo-s.jpg" alt=""><b>Papelería <span>Alexas</span></b></a>
+    <nav aria-label="Secciones">
+      <a href="#trabajos">Trabajos</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#chat">Chat</a>
+      <a href="#politica">Datos personales</a>
+      <a class="wa" href="https://wa.me/573173681950" target="_blank" rel="noopener"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><use href="#i-wa"/></svg>317 368 1950</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <span class="tag">Lagos 3 · Floridablanca</span>
+      <h1 style="margin-top:10px">Todo lo que <em>necesitas</em> en un <u>solo lugar</u></h1>
+      <p class="lead">Útiles escolares, papelería y oficina, impresiones, regalos y detalles hechos a mano, accesorios de tecnología e internet. ¡Siempre cerca de ti!</p>
+      <div class="cta">
+        <a class="btn" href="#catalogo">Ver productos</a>
+        <a class="btn green" href="https://wa.me/573173681950" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+      </div>
+      <div class="info">
+        <span class="pill"><i style="background:var(--green)"></i>WhatsApp <span style="user-select:all">317 368 1950</span></span>
+        <span class="pill"><i style="background:var(--red)"></i>Cra. 6 No. 26-17, Lagos 3</span>
+      </div>
+    </div>
+    <div class="logo"><img src="img/logo.jpg" alt="Logo de Papelería Alexas: Todo lo que necesitas en un solo lugar"></div>
+  </div>
+</div>
+
+<div class="strip">
+  <div class="wrap" id="strip"></div>
+</div>
+
+<section id="trabajos">
+  <div class="wrap">
+    <div class="sechead"><div>
+      <span class="tag">Hecho en la papelería</span>
+      <h2>Detalles y trabajos recientes</h2>
+      <p>Cajas sorpresa, anchetas, cubos con fotos y detalles temáticos. Los hacemos por encargo para cumpleaños, amor y amistad, día de la madre y grados.</p>
+    </div></div>
+    <div class="gallery">
+      <figure class="ph"><img src="img/p1.jpg" alt="Cajas sorpresa decoradas con personajes y peluches" loading="lazy"><figcaption>Cajas sorpresa decoradas</figcaption></figure>
+      <figure class="ph"><img src="img/p2.jpg" alt="Cubo de cartón con fotografía impresa" loading="lazy"><figcaption>Cubo con fotos personalizado</figcaption></figure>
+      <figure class="ph"><img src="img/p3.jpg" alt="Ancheta con dos botellas, moño rojo y tarjeta" loading="lazy"><figcaption>Ancheta con moño <small>+18</small></figcaption></figure>
+      <figure class="ph"><img src="img/p4.jpg" alt="Detalle temático de superhéroes" loading="lazy"><figcaption>Detalle temático <small>$10.000</small></figcaption></figure>
+      <figure class="ph"><img src="img/p5.jpg" alt="Detalle con diseño de oso" loading="lazy"><figcaption>Detalle de oso <small>$5.600</small></figcaption></figure>
+      <figure class="ph"><img src="img/p6.jpg" alt="Lapicero metálico con colores, tijeras y cuadernos" loading="lazy"><figcaption>Útiles para el colegio</figcaption></figure>
+      <figure class="ph wide"><img src="img/p7.jpg" alt="Afiche de regreso a clases de Papelería Alexas" loading="lazy"><figcaption>Regreso a clases con Alexas</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="catalogo" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="sechead"><div>
+      <span class="tag">Lo que vendemos</span>
+      <h2>Catálogo</h2>
+      <p>Marca lo que necesitas con <b>Agregar</b> y envía la lista completa por WhatsApp. Te confirmamos precio y disponibilidad.</p>
+    </div></div>
+    <div class="tools">
+      <div class="chips" id="chips" role="group" aria-label="Filtrar por categoría"></div>
+      <input id="q" class="search" type="search" placeholder="Buscar: cuaderno, USB, regalo…" aria-label="Buscar producto">
+    </div>
+    <div class="products" id="grid"></div>
+    <p class="empty" id="empty" hidden>No está en el catálogo en línea, pero puede que lo tengamos o lo consigamos por encargo. Pregúntalo en el chat o por WhatsApp.</p>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="wrap">
+    <div class="sechead"><div>
+      <span class="tag">En el mostrador</span>
+      <h2>Servicios</h2>
+      <p>Trabajos que hacemos mientras esperas o por encargo. También recibimos archivos por WhatsApp o correo para imprimir.</p>
+    </div></div>
+    <div class="serv" id="serv"></div>
+  </div>
+</section>
+
+<section id="chat" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="chatbox">
+      <div class="side">
+        <span class="tag">Atención en línea</span>
+        <h2 style="margin-top:8px">Chatea con la papelería</h2>
+        <ul>
+          <li>Pregunta si tenemos un producto.</li>
+          <li>Consulta impresiones, fotocopias, anillado y plastificado.</li>
+          <li>Encarga un detalle o una ancheta.</li>
+          <li>Ejerce tus derechos sobre tus datos personales.</li>
+        </ul>
+        <p class="note">Antes de chatear te pedimos aceptar la <a href="#politica">Política de Tratamiento de Datos</a>, porque en la conversación puedes compartir tu nombre o tu número.</p>
+      </div>
+      <div class="panel" aria-label="Chat">
+        <div class="bar">
+          <img src="img/logo-s.jpg" alt="">
+          <div><strong>Alexas</strong><div class="status" id="st">Esperando autorización</div></div>
+        </div>
+        <div class="log" id="log" aria-live="polite"></div>
+        <div class="gate" id="gate">
+          <label class="check"><input type="checkbox" id="chatok"> <span>Autorizo a Papelería Alexas a tratar los datos que comparta en este chat según su <a href="#politica">Política de Tratamiento de Datos Personales</a> (Ley 1581 de 2012).</span></label>
+          <button class="btn" id="start" disabled>Iniciar chat</button>
+        </div>
+        <div id="live" hidden>
+          <div class="quick" id="quick"></div>
+          <form class="composer" id="form">
+            <input id="msg" autocomplete="off" placeholder="Escribe tu pregunta…" aria-label="Mensaje">
+            <button class="btn" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="politica" class="policy-wrap">
+  <div class="wrap">
+    <div class="sechead"><div>
+      <span class="tag">Ley 1581 de 2012 · Decreto 1074 de 2015</span>
+      <h2>Política de Tratamiento de Datos Personales</h2>
+    </div></div>
+    <div class="policy">
+      <aside class="toc" aria-label="Contenido de la política">
+        <span class="tag" style="color:var(--blue)">Contenido</span>
+        <ol>
+          <li><a href="#p1">Responsable</a></li>
+          <li><a href="#p2">Marco legal</a></li>
+          <li><a href="#p3">Datos que recolectamos</a></li>
+          <li><a href="#p4">Finalidades</a></li>
+          <li><a href="#p5">Derechos del titular</a></li>
+          <li><a href="#p6">Consultas y reclamos</a></li>
+          <li><a href="#p7">Menores de edad</a></li>
+          <li><a href="#p8">Seguridad</a></li>
+          <li><a href="#p9">Vigencia</a></li>
+          <li><a href="#autorizacion">Autorización</a></li>
+        </ol>
+      </aside>
+      <article class="doc">
+        <div class="meta">Versión 1.1 · Vigente desde el <span id="today"></span>. Los campos <span class="fill">resaltados</span> se completan con los datos legales del negocio.</div>
+
+        <h3 id="p1">1. Responsable del tratamiento</h3>
+        <p><b>Papelería Alexas</b>, propietaria <span class="fill">[nombre completo]</span>, identificada con <span class="fill">[NIT o C.C.]</span>, con domicilio en la Cra. 6 No. 26-17, barrio Lagos 3, Floridablanca, Santander, Colombia.<br>
+        WhatsApp y teléfono: 317 368 1950 · Correo para temas de datos: <span class="fill">[correo]</span>.</p>
+
+        <h3 id="p2">2. Marco legal y definiciones</h3>
+        <p>Esta política se rige por el artículo 15 de la Constitución Política, la Ley Estatutaria 1581 de 2012 y el Decreto 1377 de 2013, hoy compilado en el Decreto Único 1074 de 2015.</p>
+        <ul>
+          <li><b>Titular:</b> la persona cuyos datos se tratan.</li>
+          <li><b>Dato personal:</b> cualquier información que identifique o haga identificable a una persona.</li>
+          <li><b>Tratamiento:</b> recolectar, almacenar, usar, circular o suprimir datos.</li>
+          <li><b>Autorización:</b> consentimiento previo, expreso e informado del titular.</li>
+        </ul>
+
+        <h3 id="p3">3. Datos que recolectamos</h3>
+        <div class="table"><table>
+          <thead><tr><th>Dato</th><th>Dónde se recoge</th></tr></thead>
+          <tbody>
+            <tr><td>Nombre y apellidos</td><td>Chat, pedidos, facturación</td></tr>
+            <tr><td>Número de celular / WhatsApp</td><td>Chat, pedidos y encargos</td></tr>
+            <tr><td>Correo electrónico</td><td>Facturación electrónica, archivos para imprimir</td></tr>
+            <tr><td>Cédula o NIT</td><td>Factura electrónica (exigencia DIAN)</td></tr>
+            <tr><td>Fotos que nos entregas</td><td>Detalles personalizados (cubos, cajas, anchetas)</td></tr>
+            <tr><td>Contenido de los mensajes</td><td>Chat de la página y WhatsApp</td></tr>
+          </tbody>
+        </table></div>
+        <p>No pedimos datos sensibles (salud, origen étnico, orientación política o religiosa, biométricos). Los archivos y fotos que nos entregas para imprimir o personalizar se usan solo para ese trabajo y se borran de nuestros equipos cuando lo entregamos. Solo publicamos fotos de un trabajo en redes si no aparecen personas o si el cliente lo autoriza.</p>
+
+        <h3 id="p4">4. Finalidades</h3>
+        <ol>
+          <li>Responder consultas sobre productos, precios, disponibilidad y servicios.</li>
+          <li>Gestionar pedidos, encargos y entregas.</li>
+          <li>Emitir facturas y cumplir obligaciones tributarias y contables.</li>
+          <li>Atender peticiones, quejas, reclamos y garantías.</li>
+          <li>Enviar promociones o avisos (temporada escolar, fechas especiales), solo si lo autorizas aparte. Puedes retirarte cuando quieras.</li>
+        </ol>
+        <p>No vendemos ni cedemos tus datos. Solo los compartimos cuando la ley lo exige o con proveedores que nos prestan un servicio (por ejemplo, el de facturación electrónica), bajo deber de confidencialidad.</p>
+
+        <h3 id="p5">5. Derechos del titular</h3>
+        <p>Según el artículo 8 de la Ley 1581 de 2012, tienes derecho a:</p>
+        <ul>
+          <li>Conocer, actualizar y rectificar tus datos.</li>
+          <li>Pedir prueba de la autorización que nos diste.</li>
+          <li>Saber qué uso le hemos dado a tus datos.</li>
+          <li>Presentar quejas ante la Superintendencia de Industria y Comercio (SIC).</li>
+          <li>Revocar la autorización o pedir que borremos tus datos, cuando no exista un deber legal de conservarlos.</li>
+          <li>Acceder gratis a tus datos.</li>
+        </ul>
+
+        <h3 id="p6">6. Cómo hacer consultas y reclamos</h3>
+        <p>Escríbenos al WhatsApp 317 368 1950, al correo <span class="fill">[correo]</span> o acércate al local. Indica tu nombre, documento, lo que solicitas y cómo quieres que te respondamos.</p>
+        <div class="table"><table>
+          <thead><tr><th>Trámite</th><th>Plazo de respuesta</th><th>Prórroga</th></tr></thead>
+          <tbody>
+            <tr><td>Consulta (qué datos tenemos)</td><td style="font-variant-numeric:tabular-nums">10 días hábiles</td><td>Hasta 5 días hábiles más, avisando el motivo</td></tr>
+            <tr><td>Reclamo (corregir, actualizar, suprimir, revocar)</td><td style="font-variant-numeric:tabular-nums">15 días hábiles</td><td>Hasta 8 días hábiles más, avisando el motivo</td></tr>
+          </tbody>
+        </table></div>
+        <p>Si el reclamo está incompleto, te pediremos lo que falta dentro de los 5 días siguientes. Si no respondes en 2 meses, se entiende que desististe. Después de agotar este trámite puedes acudir a la SIC.</p>
+
+        <h3 id="p7">7. Datos de niños, niñas y adolescentes</h3>
+        <p>Muchos de nuestros clientes son estudiantes. Solo tratamos datos de menores con autorización de su padre, madre o representante legal, respetando su interés superior, y únicamente para atender la compra o el encargo. No vendemos bebidas alcohólicas ni anchetas que las incluyan a menores de 18 años.</p>
+
+        <h3 id="p8">8. Seguridad</h3>
+        <p>Guardamos la información en equipos con contraseña y con acceso solo para quien la necesita. Las facturas se conservan el tiempo que exige la ley tributaria; los demás datos, mientras sigan siendo necesarios para la finalidad por la que se recogieron.</p>
+
+        <h3 id="p9">9. Vigencia y cambios</h3>
+        <p>Esta política rige desde su publicación. Cualquier cambio importante se anunciará en esta página antes de aplicarse.</p>
+
+        <form class="auth" id="autorizacion" novalidate>
+          <div>
+            <span class="tag" style="color:var(--blue)">Formato de autorización</span>
+            <h3 style="margin-top:6px;color:var(--ink)">Autorización para el tratamiento de datos personales</h3>
+          </div>
+          <div class="fields">
+            <label for="an">Nombre completo<input id="an" required></label>
+            <label for="ad">Documento<input id="ad" required inputmode="numeric"></label>
+            <label for="ac">Celular o correo<input id="ac" required></label>
+          </div>
+          <label class="check"><input type="checkbox" id="a1"> <span>Autorizo de manera previa, expresa e informada a Papelería Alexas para tratar mis datos con las finalidades 1 a 4 de esta política. Conozco mis derechos como titular.</span></label>
+          <label class="check"><input type="checkbox" id="a2"> <span>Opcional: acepto recibir promociones y avisos (finalidad 5).</span></label>
+          <p class="err" id="aerr" hidden></p>
+          <div><button class="btn" type="submit">Registrar autorización</button></div>
+          <div class="receipt" id="receipt" hidden></div>
+        </form>
+      </article>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f"><img src="img/logo-s.jpg" alt=""><div><b style="font-family:var(--display);font-size:1.2rem">Papelería Alexas</b><br>Cra. 6 No. 26-17, Lagos 3 · Floridablanca · WhatsApp 317 368 1950</div></div>
+    <div>© <span id="yr"></span> · <a href="#politica">Política de Tratamiento de Datos</a></div>
+  </div>
+</footer>
+
+<div class="cart" id="cart" hidden>
+  <div><b id="cn">0</b> en tu lista</div>
+  <a class="btn green" id="send" href="#" target="_blank" rel="noopener">Enviar por WhatsApp</a>
+  <button class="add" id="clear" style="border-color:var(--bg);color:var(--bg)">Vaciar</button>
+</div>
+
+<script>
+const C={escolar:["Útiles escolares","var(--amber)","var(--yellow-t)"],oficina:["Papelería y oficina","var(--green)","var(--green-t)"],tech:["Tecnología","var(--purple)","var(--purple-t)"],regalos:["Regalos y detalles","var(--red)","var(--red-t)"]};
+const P=[
+ ["Cuadernos","escolar","cuaderno","Cosidos y argollados, 50 y 100 hojas, cuadriculados y rayados."],
+ ["Lápices y lapiceros","escolar","lapiz","Lápiz negro y rojo, lapiceros de colores, borradores y tajalápices."],
+ ["Colores y marcadores","escolar","colores","Cajas de colores, crayolas, marcadores y resaltadores."],
+ ["Tijeras","escolar","tijeras","Punta roma para niños y tijeras de oficina."],
+ ["Reglas y geometría","escolar","regla","Regla, escuadras, transportador y compás."],
+ ["Pegantes","escolar","pegante","Pegante en barra, colbón y silicona líquida."],
+ ["Cartulinas y papeles","escolar","cartulina","Cartulina, papel iris, silueta, seda y crepé."],
+ ["Resmas de papel","oficina","resma","Papel bond carta y oficio de 75 g."],
+ ["Grapadoras y ganchos","oficina","grapadora","Grapadoras, ganchos, clips y perforadoras."],
+ ["Carpetas y AZ","oficina","carpeta","Folders, legajadores, AZ, sobres de manila y carta."],
+ ["Talonarios","oficina","oficina","Recibos de caja, cuentas de cobro y facturas."],
+ ["Memorias USB","tech","usb","16, 32 y 64 GB. También tarjetas micro SD."],
+ ["Audífonos","tech","audifonos","Alámbricos con micrófono para celular y PC."],
+ ["Mouse y teclados","tech","mouse","Con cable USB e inalámbricos."],
+ ["Cables y cargadores","tech","cable","USB-C, micro USB, Lightning y cargadores de pared."],
+ ["Pilas","tech","pilas","AA, AAA y de 9 V."],
+ ["Calculadoras","tech","calc","Básicas y científicas para el colegio y la universidad."],
+ ["Cajas sorpresa y anchetas","regalos","regalo","Por encargo para cumpleaños, amor y amistad y fechas especiales."],
+ ["Tarjetas","regalos","tarjeta","Cumpleaños, amor, grados y condolencias."],
+ ["Papel regalo y bolsas","regalos","bolsa","Bolsas de regalo, papel, moños y cintas."],
+ ["Globos","regalos","globo","De colores y metalizados."]
+];
+const S=[
+ ["Impresiones y fotocopias","impresora","var(--blue)","var(--blue-t)",["Fotocopias blanco y negro","Impresión a color","Desde USB, correo o WhatsApp","Escaneo a PDF"]],
+ ["Acabados","anillado","var(--teal)","var(--teal-t)",["Anillado plástico y metálico","Plastificado de carné y carta","Empaste sencillo"]],
+ ["Internet y más","internet","var(--purple)","var(--purple-t)",["Impresión de certificados y formularios","Hojas de vida","Trámites en línea","Recargas"]],
+ ["Detalles personalizados","regalo","var(--red)","var(--red-t)",["Cubos con fotos","Cajas sorpresa decoradas","Anchetas con moño y tarjeta"]]
+];
+const STRIP=[["Útiles escolares","colores","var(--yellow)","#catalogo"],["Impresiones y fotocopias","impresora","var(--blue)","#servicios"],["Papelería y oficina","oficina","var(--green)","#catalogo"],["Regalos y detalles","regalo","var(--red)","#trabajos"],["Internet y más","internet","var(--purple)","#servicios"],["Productos de calidad","calidad","var(--teal)","#catalogo"]];
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const ic=(id,sw=2.6)=>`<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-${id}"/></svg>`;
+
+$("#strip").innerHTML=STRIP.map(([n,i,c,h])=>`<a class="ico" href="${h}"><span class="c" style="background:${c}">${ic(i,3)}</span>${esc(n)}</a>`).join("");
+$("#serv").innerHTML=S.map(([n,i,c,t,items])=>`<div class="sv" style="background:${t}"><div class="h"><span style="background:${c}">${ic(i,3)}</span><h3>${esc(n)}</h3></div><ul>${items.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`).join("");
+
+const list=new Set();let filt="all";
+function render(){
+  const q=$("#q").value.trim().toLowerCase();
+  const out=P.filter(([n,c,,d])=>(filt==="all"||c===filt)&&(!q||(n+" "+d).toLowerCase().includes(q)));
+  $("#grid").innerHTML=out.map(([n,c,i,d])=>{const [cn,col,tint]=C[c];const on=list.has(n);
+    return `<article class="prod"><div class="art" style="background:${tint};color:${col}">${ic(i)}</div><span class="cat" style="color:${col}">${esc(cn)}</span><h3>${esc(n)}</h3><p>${esc(d)}</p><div class="row"><span class="note">Consulta precio</span><button class="add" data-n="${esc(n)}" aria-pressed="${on}">${on?"✓ En lista":"Agregar"}</button></div></article>`}).join("");
+  $("#empty").hidden=out.length>0;
+}
+$("#chips").innerHTML=[["all","Todo"],...Object.entries(C).map(([k,v])=>[k,v[0]])].map(([id,n])=>`<button class="chip" data-id="${id}" aria-pressed="${id==="all"}">${esc(n)}</button>`).join("");
+$("#chips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;filt=b.dataset.id;document.querySelectorAll("#chips .chip").forEach(x=>x.setAttribute("aria-pressed",x===b));render()});
+$("#q").addEventListener("input",render);
+$("#grid").addEventListener("click",e=>{const b=e.target.closest(".add");if(!b)return;const n=b.dataset.n;list.has(n)?list.delete(n):list.add(n);render();updCart()});
+function updCart(){
+  $("#cart").hidden=list.size===0;$("#cn").textContent=list.size;
+  const txt="Hola Papelería Alexas, quiero consultar precio y disponibilidad de:\n"+[...list].map(x=>"• "+x).join("\n");
+  $("#send").href="https://wa.me/573173681950?text="+encodeURIComponent(txt);
+}
+$("#clear").addEventListener("click",()=>{list.clear();render();updCart()});
+render();
+
+const d=new Date();$("#yr").textContent=d.getFullYear();
+$("#today").textContent=d.toLocaleDateString("es-CO",{day:"numeric",month:"long",year:"numeric"});
+
+/* chat */
+const log=$("#log");
+function say(t,who="bot"){const m=document.createElement("div");m.className="msg "+who;m.textContent=t;log.appendChild(m);log.scrollTop=log.scrollHeight}
+$("#chatok").addEventListener("change",e=>$("#start").disabled=!e.target.checked);
+say("¡Hola! Soy el chat de Papelería Alexas. Para empezar, acepta la política de tratamiento de datos aquí abajo.");
+$("#start").addEventListener("click",()=>{$("#gate").hidden=true;$("#live").hidden=false;$("#st").textContent="En línea";say("¡Listo, gracias! ¿Qué necesitas? Escribe tu pregunta o usa los botones.");$("#msg").focus()});
+const QUICK=["¿Tienen memorias USB?","Quiero una caja sorpresa","Fotocopias","¿Dónde quedan?","Mis datos personales"];
+$("#quick").innerHTML=QUICK.map(q=>`<button class="chip" type="button">${esc(q)}</button>`).join("");
+$("#quick").addEventListener("click",e=>{const b=e.target.closest(".chip");if(b)ask(b.textContent)});
+$("#form").addEventListener("submit",e=>{e.preventDefault();const v=$("#msg").value.trim();if(!v)return;$("#msg").value="";ask(v)});
+const norm=s=>s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
+function ask(t){
+  say(t,"me");const n=norm(t);let r;
+  if(/dato|privacidad|borrar|eliminar|habeas|politica/.test(n)) r="Puedes conocer, corregir o pedir que borremos tus datos escribiendo al WhatsApp 317 368 1950. Respondemos consultas en máximo 10 días hábiles y reclamos en 15. Mira la sección \"Consultas y reclamos\" de la política.";
+  else if(/donde|direccion|ubica|queda/.test(n)) r="Estamos en la Cra. 6 No. 26-17, barrio Lagos 3, Floridablanca. ¡Siempre cerca de ti!";
+  else if(/horario|abren|cierran|hora/.test(n)) r="Para confirmar el horario de hoy escríbenos al WhatsApp 317 368 1950.";
+  else if(/caja|sorpresa|ancheta|detalle|regalo|cubo|cumple/.test(n)) r="¡Claro! Hacemos cajas sorpresa, anchetas y cubos con fotos por encargo. Escríbenos al WhatsApp 317 368 1950 con la fecha, la ocasión y tu presupuesto, y te mostramos opciones.";
+  else if(/copia|imprim|impresion|escane|anillad|plastific/.test(n)) r="Sí: fotocopias, impresión a color y blanco y negro, escaneo, anillado y plastificado. Puedes enviarnos el archivo por WhatsApp al 317 368 1950 y pasar a recogerlo.";
+  else if(/pedido|encargo|comprar|domicilio/.test(n)) r="Arma tu lista en el catálogo con el botón \"Agregar\" y envíala por WhatsApp. Te confirmamos precio y disponibilidad.";
+  else if(/precio|cuanto|vale|cuesta/.test(n)) r="Los precios cambian con la temporada, así que los confirmamos por WhatsApp al 317 368 1950 o en el local.";
+  else{const hits=P.filter(([nm,,,ds])=>n.split(/\W+/).some(w=>w.length>3&&norm(nm+" "+ds).includes(w.replace(/e?s$/,"")))).map(x=>x[0]);
+    r=hits.length?"Sí, manejamos:\n• "+hits.slice(0,5).join("\n• ")+"\nPuedes agregarlo a tu lista en el catálogo y enviarla por WhatsApp.":"No lo tengo en el catálogo en línea, pero puede que lo tengamos o lo consigamos. Pregúntanos al WhatsApp 317 368 1950.";}
+  setTimeout(()=>say(r),350);
+}
+
+/* autorización */
+$("#autorizacion").addEventListener("submit",e=>{
+  e.preventDefault();const n=$("#an").value.trim(),doc=$("#ad").value.trim(),c=$("#ac").value.trim(),err=$("#aerr");
+  if(!n||!doc||!c){err.textContent="Completa nombre, documento y un medio de contacto.";err.hidden=false;return}
+  if(!$("#a1").checked){err.textContent="Para registrar la autorización marca la primera casilla.";err.hidden=false;return}
+  err.hidden=true;const r=$("#receipt");r.hidden=false;
+  r.textContent=`✓ Autorización registrada en esta pantalla\nTitular: ${n} · Doc: ${doc}\nContacto: ${c}\nFinalidades 1 a 4: Sí · Promociones: ${$("#a2").checked?"Sí":"No"}\nFecha: ${new Date().toLocaleString("es-CO")}\n\nGuarda una captura de este comprobante como prueba.`;
+});
+</script>
+
+</body>
+</html>
